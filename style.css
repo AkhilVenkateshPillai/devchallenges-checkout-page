@@ -10,7 +10,7 @@ body{
 .container-page{
     width: 960px;
     margin: 64px auto;
-    max-width: 100%;
+    
 }
 
 
@@ -30,7 +30,6 @@ body{
 
 .container-contact-info{
     width: 465px;
-    max-width: 100%;
     margin-right: 112px;
 }
 
@@ -55,9 +54,9 @@ body{
     width: 80%;
 }
 
-table{
-    width: 100%;
-}
+
+
+
 button{
     margin-top: 78px;
     float: right;
@@ -79,12 +78,11 @@ button{
 .container-contact-info>input{
     width: 465px;
     height: 56px;
-    max-width: 100%;
     border: 1px solid #828282;
     box-sizing: border-box;
     border-radius: 12px;
     outline: none;
-    padding-left: 52px;
+    padding-left: 42px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -95,16 +93,17 @@ button{
 }
 
 .checkbox{
-    width: 21px;
-    height: 21px;
-    max-width: 100%;
-    border: 1px solid #828282;
-    box-sizing: border-box;
-    border-radius: 12px;
-    outline: none;
-    margin:0;
-
+    width: 100%;
+    margin: 20px 0;
 }
+
+.checkbox>p{
+    margin: 0 15px;
+}
+.checkbox>input{
+    margin: 0 ;
+}
+
 
 
 
@@ -130,7 +129,7 @@ button{
     box-sizing: border-box;
     border-radius: 12px;
     outline: none;
-    padding-left: 52px;
+    padding-left: 42px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -147,7 +146,7 @@ button{
     box-sizing: border-box;
     border-radius: 12px;
     outline: none;
-    padding-left: 52px;
+    padding-left: 42px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -226,7 +225,6 @@ button{
 .container-cart{
     width: 383px;
     height: 534px;
-    max-width: 100%;
     background: #F2F2F2;
     border-radius: 12px;
     display: grid;
@@ -236,7 +234,6 @@ button{
 .container-cart>.container-item>.item>img{
     width: 135.7px;
     height: 135.91px;
-
     border-radius: 12px;
 }
 
@@ -245,7 +242,8 @@ button{
 }
 
 aside{float: right;
-width: 53%}
+width: 53%;
+}
 
 aside>p{
     font-family: Montserrat;
@@ -255,7 +253,6 @@ aside>p{
     line-height: 20px;
     margin: 0;
     color: #4E5150;
-    
     transform: rotate(-0.02deg);
 }
 
@@ -265,9 +262,6 @@ font-style: normal;
 font-weight: 600;
 font-size: 16px;
 line-height: 20px;
-
-/* Orange */
-
 color: #F2994A;
 transform: rotate(-0.02deg);
 
@@ -280,9 +274,7 @@ font-weight: 600;
 font-size: 12px;
 line-height: 15px;
 text-decoration-line: line-through;
-
 color: #4E5150;
-
 transform: rotate(-0.02deg);
 }
 
@@ -297,9 +289,6 @@ font-style: normal;
 font-weight: 600;
 font-size: 18px;
 line-height: 22px;
-
-/* Gray 1 */
-
 color: #333333;
 }
 
@@ -312,6 +301,7 @@ color: #333333;
     border-radius: 12px;
     display: flex;
     justify-content: center;
+    
 }
 
 .quantity>input{
@@ -320,6 +310,7 @@ color: #333333;
     background-color: #F2F2F2;
     border: none;
     text-align: center;
+   
 }
 
 .quantity>span{
@@ -329,6 +320,7 @@ color: #333333;
     background: #E0E0E0;
     border-radius: 4px;
     text-align: center;
+   
 }
 
 
@@ -341,24 +333,43 @@ font-weight: 600;
 font-size: 14px;
 line-height: 17px;
 color: #A9A9A9;
+margin: 100px 0 ;
 }
 
 /* -----------------------------------media query---------------------------------- */
 
-@media screen and (max-width:1100px){
-    
+@media screen and (max-width:1000px){
+
+  
+.checkbox>p{
+    width: 1000%;
+}
+.checkbox>input{
+    width: 50000%;
+}
+
+    .container-page{
+        width: 423px;
+        margin: auto;
+    }
     .container-body{
         flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+       
     }
 
     .container-header{
-        width: 90%;
-        margin: 30px auto;
+        width: 55%;
+        margin: 30px 0;
+        padding-left: 25px;
+       
     }
 
     .container-cart{
        width: 90%;
        margin: auto;
+      
     }
 
     .container-contact-info{
@@ -369,6 +380,12 @@ color: #A9A9A9;
     .container-contact-info input{
         width: 100%;
         margin: auto;
+    }
+
+    footer{
+        width: 269px;
+        margin: 50px auto ;
+        text-align: center;
     }
     
 }
