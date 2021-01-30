@@ -345,7 +345,7 @@ color: #A9A9A9;
 
 /* -----------------------------------media query---------------------------------- */
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1100px){
     
     .container-body{
         flex-direction: column-reverse;
@@ -365,4 +365,10 @@ color: #A9A9A9;
         width: 90%;
         margin: auto;
     }
+
+    .container-contact-info input{
+        width: 100%;
+        margin: auto;
+    }
+    
 }
