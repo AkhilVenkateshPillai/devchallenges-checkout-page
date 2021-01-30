@@ -16,13 +16,16 @@
         </div>
         <div class="container-body">
 
+            <form action="#" id="form" autocomplete="on" onsubmit="alert('Purchase succesfull')">
             <div class="container-contact-info">
+
+                
                 <h1>Contact infomation</h1>
 
                 <p>E-mail</p>
-                <input type="text" id="email" placeholder="Enter your email...">
+                <input type="text" id="email" placeholder="Enter your email..." size="30" required>
                 <p>Phone</p>
-                <input type="text" id="phone"  placeholder="Enter your phone...">
+                <input type="text" id="phone"  placeholder="Enter your phone..." pattern="[0-9]{10}" required>
 
                 <br>
                 <br>
@@ -31,18 +34,21 @@
                 <h1>Shipping address</h1>
 
                 <p>Full name</p>
-                <input type="text" id="name"  placeholder="Rodney Cotton">
+                <input type="text" id="name"  placeholder="Rodney Cotton"  size="30" required>
                 <p>Address</p>
-                <input type="text" id="address"  placeholder="Your address..">
+                <input type="text" id="address"  placeholder="Your address.."  size="30" required>
                 <p>City</p>
-                <input type="text" id="city"  placeholder="Your city.."> 
+                <input type="text" id="city"  placeholder="Your city.."  size="30" required> 
 
                 <div class="address-sub">
 
                     <div class="one">
                         <p>Country</p>
-                        <select type="select" id="country"  placeholder="Your country..">
-                            <option value=>Your country...</option>
+                        <select type="select" id="country"  placeholder="Your country.." required>
+                            <option>Your country...</option>
+                            <option>india</option>
+                            <option>japan</option>
+                            <option>iceland</option>
                             
                         </select>
 
@@ -50,7 +56,7 @@
 
                     <div class="two">
                         <p>Postal Code</p>
-                        <input type="text" id="postal"  placeholder="Your postal code..">
+                        <input type="text" id="postal"  placeholder="Your postal code.."  size="30" required>
                     </div>
 
                 </div>
@@ -72,6 +78,7 @@
 
 
             </div>
+        </form>
 
             <div class="container-cart">
                 <div class="container-item">
@@ -87,7 +94,7 @@
 
                             <div class="quantity">
                                 <span>-</span>
-                                <input type="text"  value="1">
+                                <input type="text" "1">
                                 <span>+</span>
                             </div>
                         </aside>
@@ -106,7 +113,7 @@
                             <div class="quantity">
 
                                 <span>-</span>
-                                <input type="text" value="1">
+                                <input type="text""1">
                                 <span>+</span>
 
                             </div>
