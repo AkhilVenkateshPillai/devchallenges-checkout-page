@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body{
+     width: 100%;
+     max-width: 1440px;
+     margin: auto;
+}
+
+.container-page{
+    width: 960px;
+    margin: 64px auto;
+    max-width: 100%;
+}
+
+
+.container-header{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #4E5150;
+    margin-bottom: 50px;
+}
+
+.container-body{
+    display: flex;
+}
+
+.container-contact-info{
+    width: 465px;
+    max-width: 100%;
+    margin-right: 112px;
+}
+
+.container-contact-info>h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    transform: rotate(-0.02deg);
+}
+
+.container-contact-info>p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+    transform: rotate(-0.02deg);
+}
+
+.container-contact-info>input{
+    width: 465px;
+    height: 56px;
+    max-width: 100%;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+    outline: none;
+
+}
+
+/* ----------------------------input field image icon-------------------------------- */
+
+#email{
+    background-image: url(/images/email-24px.svg);
+    background-position: 7px 14px;
+    background-repeat: no-repeat;
+    
+}
+
+#phone{
+    background-image: url(/images/phone-24px.svg);
+    background-position: 7px 14px;
+    background-repeat: no-repeat;
+    
+}
+
+
+#name{
+    background-image: url(/images/account_circle-24px.svg);
+    background-position: 7px 14px;
+    background-repeat: no-repeat;
+    
+}
+
+
+#address{
+    background-image: url(/images/home-24px.svg);
+    background-position: 7px 14px;
+    background-repeat: no-repeat;
+    
+}
+
+
+#city{
+    background-image: url(/images/location_city-24px.svg);
+    background-position: 7px 14px;
+    background-repeat: no-repeat;
+    
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+
+
+.container-cart{
+    width: 383px;
+    max-width: 100%;
+    background: #F2F2F2;
+    border-radius: 12px;
+}
+
+.container-cart>.item>img{
+    width: 135.7px;
+    height: 135.91px;
+
+    border-radius: 12px;
+}
+
+.container-cart>.item{
+    margin: 30px 30px 30px 30px;
+}
+
+aside{float: right;
+width: 53%}
+
+aside>p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #4E5150;
+    
+    transform: rotate(-0.02deg);
+}
+
+aside>.new{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+
+/* Orange */
+
+color: #F2994A;
+transform: rotate(-0.02deg);
+}
+
+aside>.old{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+text-decoration-line: line-through;
+
+color: #4E5150;
+
+transform: rotate(-0.02deg);
+}
+
+/* -----------------------------------media query---------------------------------- */
+
+@media screen and (max-width:1000px){
+    
+    .container-body{
+        flex-direction: column-reverse;
+    }
+
+    .container-header{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .container-cart{
+       width: 90%;
+       margin: auto;
+    }
+
+    .container-contact-info{
+        width: 90%;
+        margin: auto;
+    }
+}
